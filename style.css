@@ -79,5 +79,19 @@ body {
 }
 
 #phone:valid {
-    border: 3px solid greenyellow;
+    border: 1px solid greenyellow;
+}
+
+#email:valid {
+    border: 1px solid greenyellow;
+
+}
+
+#fname:valid {
+    border: 1px solid greenyellow;
+
+}
+
+#lname:valid {
+    border: 1px solid greenyellow;
 }

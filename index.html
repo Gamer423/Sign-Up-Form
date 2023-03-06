@@ -15,51 +15,41 @@
 
         <div class="login">
             <div class="loginitems">
+                <form action="#" method="get" class="formd">
             <div>
                 <label for="fname">FIRST NAME</label>
-                <form action="#" method="get">
-                    <input required type="text" name="fname" id="fname">
-                </form>
+                    <input placeholder="John" required type="text" name="fname" id="fname">
             </div>
 
             <div>
                 <label for="lname">LAST NAME</label>
-                <form action="#" method="get">
-                    <input required type="text" name="lname" id="lname">
-                </form>
+                    <input placeholder="Grimes" required type="text" name="lname" id="lname">
             </div>
 
             <div>
                 <label for="fname">EMAIL</label>
-                <form action="#" method="get">
-                    <input required type="email" name="email" id="email">
-                </form>
+                    <input placeholder="example@gmail.com" required type="email" name="email" id="email">
             </div>
 
             <div>
                 <label for="phone">PHONE NUMBER</label>
-                <form action="#" method="get">
-                    <input required type="tel" name="phone" id="phone">
-                </form>
+                    <input pattern="['+']{1}[0-9]{3} [0-9]{8}" type="tel" placeholder="+358 123456791" required name="phone" id="phone">
             </div>
 
             <div>
                 <label for="password">PASSWORD</label>
-                <form action="#" method="get">
-                    <input required type="password" name="password" id="password">
-                </form>
+                    <input minlength="6" maxlength="18" required type="password" name="password" id="password">
             </div>
 
             <div>
                 <label for="password">CONFIRM PASSWORD</label>
-                <form action="#" method="get">
-                    <input required type="password" name="passwordc" id="passwordc">
-                </form>
+                    <input minlength="6" maxlength="18" required type="password" name="passwordc" id="passwordc">
             </div>
+            <input onclick="validate_password()" type="submit" id="createaccount" value="Create Account">
+            <p id="logintext">Already have an account? <a href="">Log in</a></p>
+            </form>
         </div>
         </div>
-        <button id="createaccount" type="submit">Create Account</button>
-        <p id="logintext">Already have an account? <a href="">Log in</a></p>
     </div>
     </div>
 
